@@ -1,0 +1,181 @@
+/* ===================================================== */
+/*        STYLES SPÉCIFIQUES — PAGE CONTACT               */
+/* ===================================================== */
+
+.contact-section {
+  padding: 40px;
+}
+
+/* ------------------------------ */
+/*           TITRES               */
+/* ------------------------------ */
+
+.contact-section h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.contact-section .lead {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* ------------------------------ */
+/*          FORMULAIRE            */
+/* ------------------------------ */
+
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  border-radius: 8px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(58, 111, 248, 0.15);
+}
+
+/* Bouton envoyer */
+.btn-send {
+  width: 100%;
+  padding: 12px 30px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: var(--primary);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-send:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(58, 111, 248, 0.35);
+}
+
+/* ------------------------------ */
+/*     COLONNE INFOS DROITE       */
+/* ------------------------------ */
+
+.contact-details {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.contact-details h3 {
+  color: var(--primary);
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+/* ------------------------------ */
+/*           INFO BOX             */
+/* ------------------------------ */
+
+.info-box {
+  background-color: #f8faff;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary);
+  margin-bottom: 25px;
+}
+
+.info-box h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.info-box h4 i {
+  color: var(--primary);
+  margin-right: 10px;
+}
+
+.info-box p,
+.info-box li {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* ------------------------------ */
+/*              TAGS              */
+/* ------------------------------ */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: #e6eeff;
+  color: var(--primary);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* ------------------------------ */
+/*        LIENS CONTACT            */
+/* ------------------------------ */
+
+.info-box a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-box a:hover {
+  color: var(--primary);
+}
+
+/* ------------------------------ */
+/*           RESPONSIVE           */
+/* ------------------------------ */
+
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 25px;
+  }
+
+  .contact-details {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-details {
+    padding: 20px;
+  }
+
+  .btn-send {
+    padding: 12px 20px;
+  }
+}

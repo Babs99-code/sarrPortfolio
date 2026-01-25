@@ -1,0 +1,137 @@
+
+.section .intro-text {
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.section-title {
+  color: var(--primary);
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* Images */
+.section .image-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 200px;
+}
+
+.section .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.section .image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  color: #fff;
+  transition: opacity 0.3s ease;
+}
+
+.section .image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.section .image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Cartes */
+.section .skill-card,
+.section .project-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.section .skill-card:hover,
+.section .project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Texte */
+.section .short-desc {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.section .long-desc {
+  font-size: 0.9rem;
+  color: #444;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.section .skill-card:hover .long-desc,
+.section .project-card:hover .long-desc {
+  max-height: 200px;
+  opacity: 1;
+}
+
+/* Badges */
+.section .tech-tags .badge {
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+}
+
+/* ------------------------------ */
+/*     BOUTON RETOUR EN HAUT      */
+/* ------------------------------ */
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1200;
+  box-shadow: 0 8px 20px rgba(58, 111, 248, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: var(--transition);
+}
+
+#backToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#backToTop:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  transform: translateY(-4px);
+}
+
+/* Mobile : évite conflit avec le menu */
+@media (max-width: 768px) {
+  #backToTop {
+    right: 20px;
+    bottom: 20px;
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+}

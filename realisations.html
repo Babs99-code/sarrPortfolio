@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes compétences et réalisations — Babacar SARR</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/realisations.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<div id="page">
+
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <div class="pdp-container">
+      <img src="assets/img/photo_prof.jpg" alt="Photo de profil" class="pdp">
+    </div>
+
+    <h1 class="logo">Babacar SARR</h1>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="parcours.html">Mon parcours</a></li>
+        <li class="active"><a href="realisations.html">Mes compétences</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer">
+      <img src="assets/img/logo_paris8.png" alt="Logo Paris 8" class="logo-paris8">
+      <p><small>Master G2M — 2025</small></p>
+    </div>
+  </aside>
+
+  <!-- Contenu principal -->
+  <main>
+    <section class="section">
+
+      <h2>Mes compétences et réalisations</h2>
+      <p class="intro-text">
+        Cette page présente mes compétences techniques ainsi que mes principales réalisations académiques
+        dans le domaine de la géomatique et de l’aménagement du territoire.
+      </p>
+      <!-- ================= COMPÉTENCES LOGICIELLES ================= -->
+      <h3 class="section-title">🛠️ Compétences logicielles</h3>
+
+      <div class="row g-4">
+
+        <!-- ArcGIS -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card skill-card">
+            <div class="image-container" data-bs-toggle="modal" data-bs-target="#imageModal"
+                 data-image="assets/img/arcgis.jpg"
+                 data-title="ArcGIS Pro"
+                 data-description="Analyse spatiale avancée, géotraitement et cartographie dynamique.">
+              <img src="assets/img/arcgis.jpg" class="card-img-top" alt="ArcGIS Pro">
+              <div class="image-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Agrandir</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">ArcGIS Pro</h5>
+              <p class="short-desc">Traitement de données spatiale</p>
+              <p class="long-desc">
+                Analyse spatiale avancée, modélisation 2D/3D et production cartographique.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- QGIS -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card skill-card">
+            <div class="image-container" data-bs-toggle="modal" data-bs-target="#imageModal"
+                 data-image="assets/img/qgis.jpg"
+                 data-title="QGIS"
+                 data-description="Cartographie thématique et analyses spatiales.">
+              <img src="assets/img/qgis.jpg" class="card-img-top" alt="QGIS">
+              <div class="image-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Agrandir</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">QGIS</h5>
+              <p class="short-desc">Analyse de données, cartographie</p>
+              <p class="long-desc">
+                Analyse de réseau, traitements géomatiques et cartographie thématique.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card skill-card">
+            <div class="image-container" data-bs-toggle="modal" data-bs-target="#imageModal"
+                 data-image="assets/img/python.png"
+                 data-title="Python"
+                 data-description="Automatisation et analyse de données géographiques.">
+              <img src="assets/img/python.png" class="card-img-top" alt="Python">
+              <div class="image-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Agrandir</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="short-desc">Programmation spatiale, automatisation de tâches </p>
+              <p class="long-desc">
+                Scripts SIG, ArcPy, GDAL/OGR et analyse de données avec pandas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AutoCAD -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card skill-card">
+            <div class="image-container" data-bs-toggle="modal" data-bs-target="#imageModal"
+                 data-image="assets/img/autocad.jpg"
+                 data-title="AutoCAD"
+                 data-description="Réalisation de plans techniques.">
+              <img src="assets/img/r.png" class="card-img-top" alt="AutoCAD">
+              <div class="image-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Agrandir</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">R </h5>
+              <p class="short-desc">Statistiques et analyse de données</p>
+              <p class="long-desc">
+                Réalisation de plans techniques et intégration de données SIG.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Power BI -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card skill-card">
+            <div class="image-container" data-bs-toggle="modal" data-bs-target="#imageModal"
+                 data-image="assets/img/powerbi.jpg"
+                 data-title="Power BI"
+                 data-description="Visualisation et tableaux de bord.">
+              <img src="assets/img/powerbi.png" class="card-img-top" alt="Power BI">
+              <div class="image-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Agrandir</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Power BI</h5>
+              <p class="short-desc">Data visualisation</p>
+              <p class="long-desc">
+                Création de tableaux de bord interactifs et analyse de données.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQL -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card skill-card">
+            <div class="image-container" data-bs-toggle="modal" data-bs-target="#imageModal"
+                 data-image="assets/img/sql.jpg"
+                 data-title="SQL & PostGIS"
+                 data-description="Bases de données spatiales.">
+              <img src="assets/img/sql.png" class="card-img-top" alt="SQL & PostGIS">
+              <div class="image-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Agrandir</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">SQL & PostGIS</h5>
+              <p class="short-desc">Bases de données spatiales</p>
+              <p class="long-desc">
+                Requêtes spatiales, optimisation et gestion de bases de données géographiques.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= RÉALISATIONS ACADÉMIQUES ================= -->
+      <h3 class="section-title mt-5">📚 Réalisations académiques</h3>
+
+      <div class="row g-4">
+
+        <!-- Projet 1 -->
+        <div class="col-md-6">
+          <div class="card project-card">
+            <a href="assets/docs/Spatialisation et valorisation de la dimension internationale de l'UFR SEGGAT.pdf"
+               download class="image-container">
+              <img src="assets/img/projtut.jpg" class="card-img-top" alt="Projet tuteuré">
+              <div class="image-overlay">
+                <i class="fas fa-download"></i>
+                <span>Télécharger le PDF</span>
+              </div>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Projet tuteuré</h5>
+              <p class="short-desc">UFR SEGGAT</p>
+              <p class="long-desc">
+                Spatialisation et valorisation de la dimension internationale de l’UFR SEGGAT.
+              </p>
+              <div class="tech-tags">
+                <span class="badge">QGIS</span>
+                <span class="badge">PostgreSQL / PostGIS</span>
+                <span class="badge">Power BI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="col-md-6">
+          <div class="card project-card">
+            <a href="assets/docs/Carto.pdf" download class="image-container">
+              <img src="assets/img/carte.jpg" class="card-img-top" alt="Géodiversité">
+              <div class="image-overlay">
+                <i class="fas fa-download"></i>
+                <span>Télécharger</span>
+              </div>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Projet SIG Cartographie</h5>
+              <p class="short-desc">Calvados, Fresney-le-Puceux</p>
+              <p class="long-desc">
+                Étude de la répartition des haies dans le Calvados et l'occupation du sol dans la commune de Fresney-le-Puceux.
+              </p>
+              <div class="tech-tags">
+                <span class="badge">Qgis</span>
+                <span class="badge">R</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="col-md-6">
+          <div class="card project-card">
+            <a href="assets/docs/Diag.pdf" download class="image-container">
+              <img src="assets/img/Diag.jpg" class="card-img-top" alt="Diagnostic territorial">
+              <div class="image-overlay">
+                <i class="fas fa-download"></i>
+                <span>Télécharger le PDF</span>
+              </div>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Diagnostic territorial (Projet de groupe)</h5>
+              <p class="short-desc">Seulles, Terre et Mer</p>
+              <p class="long-desc">
+                Analyse multicritère et scénarios d’aménagement territorial.
+              </p>
+              <div class="tech-tags">
+                <span class="badge">QGIS</span>
+                <span class="badge">Inkscape</span>
+                <span class="badge">Power BI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="col-md-6">
+          <div class="card project-card">
+            <a href="assets/docs/SARR_Babacar_Mémoire_stage_Lpro_SIG_DAT.pdf"
+               download class="image-container">
+              <img src="assets/img/stage.jpg" class="card-img-top" alt="Mémoire de stage">
+              <div class="image-overlay">
+                <i class="fas fa-download"></i>
+                <span>Télécharger le PDF</span>
+              </div>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Mémoire de fin d’études</h5>
+              <p class="short-desc">Licence professionnelle SIG-DAT</p>
+              <p class="long-desc">
+                Étude des inégalités socio-environnementales de l’asthme en France.
+              </p>
+              <div class="tech-tags">
+                <span class="badge">QGIS</span>
+                <span class="badge">R</span>
+                <span class="badge">PostgreSQL / PostGIS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Bouton retour en haut -->
+<button id="backToTop" aria-label="Retour en haut">⬆</button>
+
+<script>
+  const backToTopButton = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add("show");
+    } else {
+      backToTopButton.classList.remove("show");
+    }
+  });
+
+  backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/realisations.js"></script>
+
+</body>
+</html>
